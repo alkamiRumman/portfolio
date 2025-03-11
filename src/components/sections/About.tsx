@@ -85,24 +85,25 @@ export const About = () => {
                             animate={{opacity: 1, y: 0, scale: 1}}
                             whileHover={{scale: 1.05}}
                             className="relative text-4xl md:text-6xl font-extrabold text-center
-               bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300
-               bg-clip-text text-transparent tracking-wide z-10 hover:scale-105 hover:text-blue-400 transition-transform"
+               bg-gradient-to-r from-blue-500 to-cyan-800 dark:from-blue-400 dark:to-cyan-300
+               bg-clip-text text-transparent tracking-wide z-10 hover:scale-105 hover:text-blue-700 dark:hover:text-blue-400 transition-transform"
                         >
                             About Me
                         </motion.h2>
 
                         {/* Animated underline */}
                         <motion.div
-                            className="relative h-1 w-40 mx-auto mt-6 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700"
-                            initial={{width: 0}}
-                            animate={{width: "10rem"}}
-                            transition={{duration: 0.8, delay: 0.2, ease: "easeOut"}}
+                            // className="relative h-1 w-40 mx-auto mt-6 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700"
+                            className="relative h-1 w-40 mx-auto mt-6 overflow-hidden rounded-full inset-0 bg-gradient-to-r from-blue-500 to-cyan-400 dark:from-blue-300 dark:to-cyan-200"
+                            initial={{x: "-100%"}}
+                            animate={{x: 0}}
+                            transition={{duration: 2.5, delay: 1, ease: "easeInOut"}}
                         >
                             <motion.div
                                 className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-400 dark:from-blue-300 dark:to-cyan-200"
                                 initial={{x: "-100%"}}
                                 animate={{x: 0}}
-                                transition={{duration: 0.8, delay: 0.4}}
+                                transition={{duration: 1.5, delay: 0.9}}
                             />
                         </motion.div>
 
